@@ -1,0 +1,54 @@
+MOHD IBRAHIM MIRZA 
+email-mohd.ibrahim.mirza@gmail.com
+
+
+1. What is the need of IAM?
+
+We IAM OR identity access Management because it provides organisations to control access to their resources such as IT infrastructure or application. It provides a way to organisation to manage user and their permission and also ensures only authorised user can access their system and data. This helps organisation to protect their sensitive information and ensures only authorised user can access it. Also, IAM can help organizations to comply with regulatory requirements and industry standards related to access control. 
+
+2. If i am a non tech person, how will you define policies in IAM.
+
+if you're non tech person, i will define Iam policies to you like- As rules or guidelines which determine who access which resources in our company.hese rules can be defined by the organization's administrator, and they determine which users are allowed to access which resources, and what actions they are allowed to perform on those resources.
+
+
+3. Please define a scenerio in which you would like to createyour on own IAM policy.
+
+One scenario in which we might want to create our own IAM policy is if we are an administrator for a cloud-based storage system, and we want to control access to the files stored in that system. In this scenario, we could create an IAM policy that specifies which users are allowed to access the files, and what actions they are allowed to perform on those files. For example, you might want to give some users the ability to read and write files, while only allowing others to read the files. Additionally, you might want to create separate policies for different groups of users, such as employees and contractors, to ensure that each group has the appropriate level of access to the files. By creating your own IAM policy, you can ensure that only authorized users have access to the files in your cloud-based storage system, and that they can only perform the actions that you have permitted.
+
+4.why do we prefer not using root account?
+
+It is generally recommended not to use the root account for everyday tasks, because the root account has full access to all resources in the system, and any actions performed using the root account could potentially have serious consequences. If the root account is compromised, an attacker could gain complete control over the system and access to all of its data. Additionally, if an action is performed using the root account that accidentally causes harm to the system, it can be difficult or impossible to undo. For these reasons, it is generally best to use a regular user account for everyday tasks, and only use the root account when absolutely necessary. This helps to reduce the risk of accidental harm to the system and protects against potential security threats.
+
+5.How to revoke policy for an IAM user?
+
+step-1. To revoke a policy for an IAM user, you can follow these steps:
+
+step-2. Sign in to the AWS Management Console and open the IAM service.
+
+step-3. In the left-hand navigation menu, click on "Users" to view a list of your IAM users.
+
+step-4  Select the user for whom you want to revoke the policy, and then click on the "Permissions" tab.
+
+step-5. In the "Permissions" tab, you will see a list of policies that are currently attached to the user. Select the policy that you want to revoke, and then click on the "Remove" button.
+
+step-6. Confirm that you want to remove the policy by clicking on the "Remove" button in the confirmation dialog box.
+
+After completing these steps, the policy will be removed from the user, and they will no longer have access to the resources that were controlled by that policy.
+
+
+6.Can a single IAM user be a part of multiple policy via group and root? how?
+
+
+Yes, a single IAM user can be a part of multiple policies via group and root. An IAM user can be added to one or more groups, and each group can be associated with one or more policies. In addition, the root account can also be associated with policies. This means that a single IAM user can effectively have access to the resources controlled by all of the policies associated with the groups they are a part of, as well as any policies associated with the root account.
+
+To add an IAM user to a group, you can follow these steps:
+
+Sign in to the AWS Management Console and open the IAM service.
+
+In the left-hand navigation menu, click on "Groups" to view a list of your IAM groups.
+
+Select the group that you want to add the user to, and then click on the "Add Users to Group" button.
+
+In the "Add Users to Group" dialog box, select the user that you want to add to the group, and then click on the "Add" button.
+
+After completing these steps, the user will be added to the group and will have access to the resources controlled by the policies associated with that group. You can also use the AWS CLI or the IAM API to add users to group
